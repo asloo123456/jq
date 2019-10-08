@@ -1,0 +1,17 @@
+ul.list-unstyled.my_font a{
+    color:gray;
+}
+
+a.reverse{
+    display:inline-block;
+    position: absolute;
+    top:70%;left:43%;
+    width:130px;height:22px;
+}
+.dddd>ul{
+    display:flex;
+   flex-direction: column;
+}
+.dddd>ul>li{
+    margin-bottom: 20px
+}

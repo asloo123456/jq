@@ -1,0 +1,42 @@
+.carousel-indicators li{
+  width:0.8rem;height:0.8rem;
+  margin-left:0.4rem;
+  margin-right:0.4rem;
+  border-radius:50%;
+	background-color:#fff;
+}
+.carousel-indicators .active {
+  background-color:#b573c7ed;
+	cursor:pointer;
+}
+.rel.hat {
+  background-image:url(../image/hat0.jpg);
+}
+.rel {
+  height:1000px;
+  position: relative;
+  background: no-repeat fixed;
+  z-index:1;
+  background-size:cover;
+}
+.rel.home {
+  background-image:url(../image/cloth0.jpg);
+}
+.rel.cloth {
+  background-image:url(../image/cloth0.jpg);
+}
+.back{
+  position:relative;
+}
+.back a{
+  display:block;
+  position:absolute;
+	top:70%;left:43%;
+  width:131px;
+  height:26px;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear:both ;
+}

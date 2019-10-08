@@ -1,0 +1,94 @@
+/* 商品详情 */
+.pro{width:95%;}
+.my_title{font-weight: bold;text-indent: 30px;}
+.my_pro{
+  height: 35px; 
+  box-shadow: 0px 0px 10px #ccc;
+  height: 130px;
+  background: #F6F5F5;
+  padding-top: 5px;
+  box-shadow: 0px 0px 10px #ccc;  
+}
+.pro_font{
+  font-size: 20px;
+  line-height:35px;  
+   background: -webkit-linear-gradient(bottom, pink 0%, #FF0036 100%);
+   color:#F6F5F5;
+}
+.price{font-size:14px; }
+.price_span{ color:red;font-size: 18px;padding-left:40px;}
+.my_pro a{color: black}
+.my_host:hover{color:blue; }
+#specs a{margin:10px 5px;border:1px solid #ccc }
+#specs a.active{border:1px solid red}
+.pro_count>.count {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 1px;
+  color: #179D46;
+}
+.buy_btn {
+  display: inline-block;
+  overflow: hidden;
+  background-color: #ffeded;
+  border: 1px solid #FF0036;
+  line-height: 30px;
+  padding:0 45px; 
+}
+/* 人气 */
+p.share {
+  margin-top: 30px;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+p.share a{color:#ccc}
+/* 小图片区域 */
+#imgs {width:350px;margin:0 auto;overflow: hidden;}
+/* 解决高度坍塌 */
+#imgs ul:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#imgs ul li{float: left;list-style: none ;margin-left:5px }
+#imgs li a{ width:80px}
+#imgs img{width:60px;}
+/* 左右箭头 */
+.carousel-control-prev,
+.carousel-control-next{
+    width:10%;
+    height:10%;
+    background-color:#aaa;
+    border-radius:0.5rem;
+    top:70%;
+}
+/* 中图 */
+.zoom{ 
+  width:100%;
+  position: relative;
+  left:20px;
+}
+.small_area .mask{
+  background:rgba(255,255,220,0.7);
+  position: absolute;
+  top: 0px;left:0px;
+  width:200px;height: 200px; 
+}  
+.big_area{
+  position: absolute;
+  top: 0px;left:425px;
+  z-index: 99;
+  width:400px;height: 400px;
+  overflow: hidden;
+}
+/* .big_area img{
+  position: relative;
+  top: 0px;left:0px;
+
+} */
+/* 设置图片上方遮盖 */
+#supmask{
+  position: absolute;
+  top:0px;left:0px;
+  height:400px;width: 400px;
+}

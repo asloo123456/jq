@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		function d1(){
+			var $uname=uname.value;
+			if(!$uname){
+				msg1.innerHTML="用户名不能为空";
+			}else{
+			  msg1.innerHTML=" ";
+			}
+		}
+		function d2(){
+			var $upwd=upwd.value;
+			if(!$upwd){
+				 msg2.innerHTML="密码不能为空";
+			}else{
+			  msg2.innerHTML=" ";
+			}
+		}		
+		function login(){
+	  	var $uname=uname.value;
+			var $upwd=upwd.value;
+			var xhr=new	XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+			  if(xhr.readyState===4&&xhr.status===200){
+				  var result=xhr.responseText;
+						if(result=="1"){
+							alert("登陆成功");
+							location.href="http://localhost:8080/page.html";
+						}else{
+						  alert("登陆失败");
+						}
+				}
+			}
+			//   
+			xhr.open("get","/user/v1/login/"+$uname+"&"+$upwd,true);
+			xhr.send();
+		}
+	</script>
+	<link rel="stylesheet" href="css/login.css">	
+</head>
+<body class="query">
+	<div id="d1">
+		<p>
+		<h3>账号登入</h3>
+		<input type="text" id="uname" placeholder="请输入用户名" onblur="d1()" ><br>
+		<span id="msg1"></span>
+		<br>
+		<input type="text" id="upwd" placeholder="请输入密码" onblur="d2()"><br>
+		<span id="msg2"></span>
+		<br>
+		<p class="p1">
+		<a href="">找回密码？</a>
+		<a href="page.html">注册账号</a>
+		</p>
+		</p>
+		<button onclick="login()">登陆</button>
+`	</div>
+</body>
+</html>

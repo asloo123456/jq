@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0; }
+a {
+    text-decoration: none; }
+
+.my_bg_head{
+    background-color:#E0E0E0 !important;
+}
+.my_font{
+    font-size:15px;
+}
+.my_image{
+    position: absolute;
+    right:23%;
+    color:white;
+    color:dark
+}
+.active{
+    background-color:#ddd;
+    color:#fff; 
+}
